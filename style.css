@@ -1,0 +1,352 @@
+/* General Styling */
+:root {
+    --primary-gradient: linear-gradient(135deg, #ba5370, #f4e2d8); 
+    --secondary-gradient: linear-gradient(135deg, #e84393, #fd79a8);
+    --accent-color: #6c5ce7; 
+    --text-dark: #333333; 
+    --text-light: #fefefe;
+    --background-light: #ffffff;
+    --background-section: #fdfaf7;
+    --card-background: #ffffff;
+    --border-radius: 12px;
+    --shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+    --hover-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Hero Section */
+.hero-section {
+    background: var(--primary-gradient);
+    color: var(--text-light);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    z-index: 1;
+    padding: 20px;
+}
+
+.hero-section h1 {
+    font-size: 3.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero-section p {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.cta-button {
+    background: var(--secondary-gradient);
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+}
+
+/* BMI Calculator Section */
+.bmi-calculator-section {
+    padding: 100px 0;
+    background-color: var(--background-section);
+    text-align: center;
+}
+
+.bmi-calculator-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    color: var(--text-dark);
+}
+
+.bmi-calculator-section .container {
+    background-color: var(--card-background);
+    padding: 50px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    max-width: 650px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 1.1rem;
+}
+
+.input-group input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 1.05rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input[type="number"]:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.2); 
+}
+
+#calculate-bmi {
+    background: var(--secondary-gradient);
+    color: var(--text-light);
+    padding: 15px 30px;
+    border-radius: var(--border-radius);
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    width: 100%;
+    margin-top: 30px;
+}
+
+#calculate-bmi:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+}
+
+.result-display {
+    margin-top: 40px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.result-display span {
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.result-display #bmi-value {
+    color: var(--accent-color);
+}
+
+.result-display #bmi-category {
+    text-transform: capitalize;
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 100px 0;
+    background: var(--primary-gradient);
+    color: var(--text-light);
+    text-align: center;
+}
+
+.benefits-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    color: var(--text-light);
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.benefit-item {
+    background-color: var(--card-background);
+    color: var(--text-dark);
+    padding: 35px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--hover-shadow);
+}
+
+.benefit-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 25px;
+}
+
+.benefit-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+
+.benefit-item p {
+    color: #666; 
+    font-size: 1rem;
+}
+
+/* Tips Section */
+.tips-section {
+    padding: 100px 0;
+    background-color: var(--background-section);
+    text-align: center;
+}
+
+.tips-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    color: var(--text-dark);
+}
+
+.tip-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.tip-card {
+    background: var(--secondary-gradient); 
+    color: var(--text-light);
+    padding: 35px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.tip-card:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--hover-shadow);
+}
+
+.tip-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+}
+
+.tip-card p {
+    font-size: 1rem;
+    opacity: 0.95;
+}
+
+/* Footer */
+footer {
+    background-color: #333333; 
+    color: var(--text-light);
+    text-align: center;
+    padding: 25px;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #fd79a8; 
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f4e2d8; 
+}
+footer .copyright {
+    color: #fd79a8; /* Set the default color */
+}
+
+footer .copyright:hover {
+    font-weight: 600;
+    color: #f4e2d8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-section p {
+        font-size: 1.3rem;
+    }
+
+    .bmi-calculator-section h2,
+    .benefits-section h2,
+    .tips-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .benefit-grid,
+    .tip-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .bmi-calculator-section .container {
+        padding: 30px;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .bmi-calculator-section h2,
+    .benefits-section h2,
+    .tips-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .benefit-item, .tip-card {
+        padding: 25px;
+    }
+}
