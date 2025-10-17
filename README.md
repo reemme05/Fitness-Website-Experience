@@ -2,7 +2,7 @@
 
 **Get Fit, Stay Healthy** is a modern, responsive landing page designed to serve as a central hub for fitness related issues, BMI calculation, and best practices. Built with clean HTML5, CSS3 and JavaScript, it offers a beautiful UI/UX experience, making it a perfect starting point or reference for frontend developers.
 
-![screenshot](https://github.com/reemme05/Fitness-Website-Experience/blob/main/images/Fitness%20Website%20Experience%20Screenshot%20-%20Preview.png)
+![screenshot]([https://github.com/reemme05/Fitness-Website-Experience/blob/main/images/Fitness%20Website%20Experience%20Screenshot%20-%20Preview.png](https://github.com/reemme05/Fitness-Website-Experience/blob/main/images/Fitness%20Website%20Experience%20Screenshot%20-%20Preview%20Modified.png))
 
 ##  Features
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **HTML5**
 - **CSS3**
@@ -75,7 +75,7 @@ Then visit http://localhost:8000 in your browser.
 
 ##  Screenshots
 
-Click here to see the <a href="https://github.com/reemme05/Fitness-Website-Experience/blob/main/images/Fitness%20Website%20Experience%20Screenshot%20-%20Preview.png" target="_blank">Preview</a>
+Click here to see the <a href="[https://github.com/reemme05/Fitness-Website-Experience/blob/main/images/Fitness%20Website%20Experience%20Screenshot%20-%20Preview.png](https://github.com/reemme05/Fitness-Website-Experience/blob/main/images/Fitness%20Website%20Experience%20Screenshot%20-%20Preview%20Modified.png)" target="_blank">Preview</a>
 
 ---
 
